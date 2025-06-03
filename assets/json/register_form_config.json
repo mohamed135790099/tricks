@@ -1,0 +1,77 @@
+{
+  "form": {
+    "title": "نموذج التسجيل",
+    "description": "الرجاء تعبئة البيانات المطلوبة بدقة",
+    "theme": {
+      "primaryColor": "#4CAF50",
+      "secondaryColor": "#8BC34A",
+      "textColor": "#333333",
+      "backgroundColor": "#F5F5F5",
+      "cardElevation": 4,
+      "borderRadius": 12
+    },
+    "fields": [
+      {
+        "type": "text",
+        "label": "الاسم الكامل",
+        "name": "full_name",
+        "placeholder": "ادخل اسمك الثلاثي",
+        "required": true,
+        "icon": "person",
+        "validation": {
+          "minLength": 3,
+          "maxLength": 50
+        }
+      },
+      {
+        "type": "email",
+        "label": "البريد الإلكتروني",
+        "name": "email",
+        "placeholder": "example@domain.com",
+        "required": true,
+        "icon": "email",
+        "validation": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      },
+      {
+        "type": "phone",
+        "label": "رقم الهاتف",
+        "name": "phone",
+        "placeholder": "01XXXXXXXX",
+        "required": true,
+        "icon": "phone",
+        "validation": "^01[0-2,5]{1}[0-9]{8}$"
+      },
+      {
+        "type": "dropdown",
+        "label": "المحافظة",
+        "name": "governorate",
+        "options": ["القاهرة","بني سويف", "الجيزة", "الإسكندرية", "المنصورة", "أسوان"],
+        "required": true,
+        "icon": "location_city"
+      },
+      {
+        "type": "date",
+        "label": "تاريخ الميلاد",
+        "name": "birth_date",
+        "required": true,
+        "icon": "calendar_today"
+      },
+      {
+        "type": "checkbox",
+        "label": "أوافق على الشروط والأحكام",
+        "name": "terms_accepted",
+        "required": true
+      },
+      {
+        "type": "submit",
+        "label": "حفظ البيانات",
+        "buttonStyle": {
+          "backgroundColor": "#4CAF50",
+          "textColor": "#FFFFFF",
+          "elevation": 2,
+          "padding": 16
+        }
+      }
+    ]
+  }
+}
