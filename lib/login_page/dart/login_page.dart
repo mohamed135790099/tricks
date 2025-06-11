@@ -12,22 +12,29 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Register Page'),
+        centerTitle:true,
+        title: const Text('Login Page - Test2'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop(); // Navigate back to the previous page
+          },
+        )
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Please Register in',
-              style: TextStyle(fontSize: 90, fontWeight: FontWeight.bold),
+              'Please log in Test2',
+              style: TextStyle(fontSize: 24),
             ),
-            const SizedBox(height: 89),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // Handle login logic here
               },
-              child: const Text('Register'),
+              child: const Text('Login Test2'),
             ),
           ],
         ),
