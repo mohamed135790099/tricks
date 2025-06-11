@@ -10,6 +10,28 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Register Page'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'Please Register in',
+              style: TextStyle(fontSize: 90, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 89),
+            ElevatedButton(
+              onPressed: () {
+                // Handle login logic here
+              },
+              child: const Text('Register'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
