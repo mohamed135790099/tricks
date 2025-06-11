@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle:true,
-        title: const Text('Login Page - Test2'),
+        title: const Text('Login Page - Test2 User Login'),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -25,8 +25,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Icon(Icons.login,
+              size: 100,
+              color: Theme.of(context).colorScheme.primary,
+            ),
             const Text(
-              'Please log in Test2',
+              'Please log in Test2 User Login',
               style: TextStyle(fontSize: 24),
             ),
             const SizedBox(height: 20),
@@ -34,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 // Handle login logic here
               },
-              child: const Text('Login Test2'),
+              child: const Text('Login Test2 User Login'),
             ),
           ],
         ),
