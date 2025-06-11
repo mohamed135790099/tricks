@@ -13,7 +13,16 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle:true,
-        title: const Text('Login Page - Test2 User Login'),
+        title: const Column(
+          children: [
+            Text('Login Page - Test2 User Login'),
+            Text('Login Page - Test2 User Login'),
+            Text('Login Page - Test2 User Login'),
+            Text('Login Page - Test2 User Login'),
+            Text('Login Page - Test2 User Login'),
+
+          ],
+        ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
