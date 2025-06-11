@@ -12,14 +12,21 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login Page'),
+        centerTitle:true,
+        title: const Text('Login Page - Test2'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop(); // Navigate back to the previous page
+          },
+        )
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Please log in',
+              'Please log in Test2',
               style: TextStyle(fontSize: 24),
             ),
             const SizedBox(height: 20),
@@ -27,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 // Handle login logic here
               },
-              child: const Text('Login'),
+              child: const Text('Login Test2'),
             ),
           ],
         ),
