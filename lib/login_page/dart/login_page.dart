@@ -48,7 +48,8 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Handle login logic here
+                // Call the login function with test user credentials
+                login('test2user', 'test2user@gmail.com','12345678');
               },
               child: const Text('Login Test2 User Login'),
             ),
@@ -56,5 +57,12 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
+  }
+
+  Future<void> login(String userName, String email ,String password) async {
+    // Simulate a login process
+    await Future.delayed(const Duration(seconds: 2));
+    // After login, navigate to the home page or another page
+    Navigator.of(context).pushReplacementNamed('/home');
   }
 }
