@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test2/dounce_vs_throttle/dart/search_page.dart';
-
-import 'dynamic_form_builder/dynamic_form_builder.dart';
-import 'optimistic_uI/domain/products_cubit.dart';
-import 'optimistic_uI/presentation/product_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,10 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BlocProvider(
-          create: (_) => ProductsCubit(),
-          child: ProductsPage()
-      ),
+      home: SearchPage(),
     );
   }
 }
