@@ -15,7 +15,17 @@ class _LoginPageState extends State<LoginPage> {
         centerTitle:true,
         title: Container(
           color: Theme.of(context).colorScheme.primaryContainer,
-            child: const Text('Login Page - Test2 User Login')),
+            child: Column(
+              children: [
+                const Text('Login Page'),
+                const Text('Login Page - Test2 User Login'),
+                Container(
+                  height: 2,
+                  color: Theme.of(context).colorScheme.primary,
+                )
+              ],
+            )
+        ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
