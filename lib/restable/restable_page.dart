@@ -1,32 +1,32 @@
-import 'package:flutter/material.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+import 'package:flutter/material.dart';
+class RestablePage extends StatefulWidget {
+  const RestablePage({super.key});
 
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<RestablePage> createState() => _RestablePageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _RestablePageState extends State<RestablePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Register Page'),
+        title: const Text('Restable Page'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Register Page',
+              'Restable Page',
               style: TextStyle(fontSize: 24),
             ),
             ElevatedButton(
               onPressed: () {
                 // Navigate to the next page or perform an action
               },
-              child: const Text('Register'),
+              child: const Text('Go to Restable'),
             ),
           ],
         ),
