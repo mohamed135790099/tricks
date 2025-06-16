@@ -8,6 +8,8 @@ class Debounce{
   VoidCallback? _action;
   Timer? _timer;
 
+
+
   Debounce({required this.duration});
 
   void call(VoidCallback action) {

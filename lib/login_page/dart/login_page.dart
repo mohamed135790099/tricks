@@ -50,7 +50,6 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 // Call the login function with test user credentials
                 login('test2user', 'test2user@gmail.com','12345678');
-                // Handle login logic here
               },
               child: const Text('Login Test2 User Login'),
             ),
@@ -66,5 +65,4 @@ class _LoginPageState extends State<LoginPage> {
     // After login, navigate to the home page or another page
     Navigator.of(context).pushReplacementNamed('/home');
   }
-
 }
