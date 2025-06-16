@@ -10,6 +10,27 @@ class TestingGit extends StatefulWidget {
 class _TestingGitState extends State<TestingGit> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Testing Git'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'Testing Git Page',
+              style: TextStyle(fontSize: 24),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to the next page or perform an action
+              },
+              child: const Text('Go to Next Page'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
