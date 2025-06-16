@@ -23,13 +23,13 @@ class _SettingsPageState extends State<SettingsPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('Settings Page', style: TextStyle(fontSize: 24)),
+                const Text('Settings Page Page', style: TextStyle(fontSize: 24)),
                 const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     // Add your settings action here
                   },
-                  child: const Text('Save Settings'),
+                  child: const Text('Save Settings PagePagePagePagePagePage'),
                 ),
               ],
             ),
