@@ -10,6 +10,7 @@ class RestorableIntDoublePage extends StatefulWidget {
 
 class _RestorableIntDoublePageState extends State<RestorableIntDoublePage> with RestorationMixin {
   final RestorableInt _counter = RestorableInt(0);
+
   final RestorableDouble _rating = RestorableDouble(2.5);
 
   @override
@@ -18,6 +19,7 @@ class _RestorableIntDoublePageState extends State<RestorableIntDoublePage> with 
   @override
   void restoreState(RestorationBucket? oldBucket, bool initialRestore) {
     registerForRestoration(_counter, 'counter');
+
     registerForRestoration(_rating, 'rating');
   }
 
