@@ -21,6 +21,7 @@ class Debounce{
   void _execute() {
     if (_action != null) {
       _action!();
+      
       _action = null;
     }
   }
