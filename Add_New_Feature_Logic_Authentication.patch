@@ -1,0 +1,18 @@
+Subject: [PATCH] Add New Feature Logic Authentication
+---
+Index: lib/dounce_vs_throttle/dart/debounce.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/dounce_vs_throttle/dart/debounce.dart b/lib/dounce_vs_throttle/dart/debounce.dart
+--- a/lib/dounce_vs_throttle/dart/debounce.dart	(revision cb83b2094f174543959dced67d7d84eff083bd69)
++++ b/lib/dounce_vs_throttle/dart/debounce.dart	(date 1750116462814)
+@@ -21,6 +21,7 @@
+   void _execute() {
+     if (_action != null) {
+       _action!();
++      
+       _action = null;
+     }
+   }
